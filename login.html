@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Adelform Cart</title>
+<meta charset="utf-8">
+<style>
+div.container {
+    background-color: #FFFFFF;               
+   	padding: 15em;    
+    margin-left: auto;  
+    margin-right: auto;
+    margin-top: 180px;      
+    width: 20%;
+    height: 20px;              
+    border-radius: 15px;}
+.createAccountTitle{
+    position: relative;
+    margin-left: auto;  
+    margin-right: auto;
+    left: 150px;
+    font-size: 40px;
+    top: -300px;
+    display: inline-block;
+    width: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.username{
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 30px;
+}
+.createAccountButton{
+  position: absolute;
+  top: 500px;
+  left: 930px;
+  background-color: lightblue;
+  border-radius: 15px;
+  width: 100px;
+  height:40px;
+  text-align: center;
+}
+.topLeftHomeButton{
+    position: fixed;
+    left: 8%;
+    top: 14px;
+    font-size: 30px;
+    display: inline-block;}
+}
+
+a:link{
+  color: #e7e29a;
+}
+a:visited {
+  color:#e7e29a;
+}
+a:hover {
+  color: rgb(248, 238, 147);
+}
+a:active {
+  color: grey;
+}
+a{
+  text-decoration: none;
+}
+.usernameFontSize{
+  font-size: 21px;
+  display: inline;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.buttonSettings{
+  position: relative;
+  left: 90px;
+  bottom: -10px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.formPosition{
+  position: relative;
+  left: 40px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+
+</style>
+</head>
+<body style = "background-color: lightyellow;">
+<nav class = "topLeftHomeButton">
+    <a href="index.html">Audelform Store</a> &nbsp;
+</nav>
+<div class="container">
+    <div class="createAccountTitle">
+        Login
+    </div>
+    <form class="formPosition">
+      <label class="usernameFontSize" for="username"><b>Username: </b></label>
+      <input id="input" type="text" placeholder="Enter Username" name="username" required>
+      <br>
+      <button class="buttonSettings" type="submit" onclick="signUp();">Create Account</button>
+  </form>
+</div>
+</body>
+</html>
